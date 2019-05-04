@@ -1,2 +1,19 @@
 # Pyspark_Sparkify_project
 Investigation of 12Gb Dataset on AWS EMR using pyspark
+
+### Project Overview
+Goal of this project is to develop a machine learning model that predicts whether a user of a music streaming app "Sparkify" (not real app) is going to cancel his/her subscription. Based on this knowledge certain benefits could be offered to such users which could prevent a cancelation of a subscription. 
+
+The work consists of following  steps:
+1. Investigation of a "mini" version of dataset (128 Mb). The goal here is to define a set of features that are likely to be correlated with user churn and based on that define an ETL pipeline for a real "large" dataset.
+2. Work on real dataset (12 Gb) using AWS EMR (Amazon Web Services Ellastic Map Reduce) service. The Dataset is firstly processed using an ETL Pipeline from step1. Resulting data is modelled using spark ML Library. As a result best classifiers for a user churn are defined and investigated for the feature importance.
+
+### Installations
+
+In order to run this project following python libraries are needed: pyspark, pyspark.ml, pandas, numpy, matplotlib, seaborn
+   
+### Files
+This project contains two jupyter notebooks: **Sparkify_investigation_prepare.ipynb** and **Sparkify_modeling.ipynb** both were used to perform steps 1 and 2 from project description given above. Each Notebook was also stored as .html. 
+
+### Acknowledgments:
+This project is a part of a Udacity "Data Scientist" Nanodegree. Datasets can be obtained from Udacity. 
