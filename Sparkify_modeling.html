@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>2019_05_04_Sparkify</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Sparkify_modeling</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11810,13 +11810,13 @@ spark = SparkSession \
 
  
  
-<div id="9b6b230b-5582-4514-a184-85ea4d31bbeb"></div>
+<div id="2feaab84-2122-4aa3-95d6-20d75f75700a"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#9b6b230b-5582-4514-a184-85ea4d31bbeb');
+var element = $('#2feaab84-2122-4aa3-95d6-20d75f75700a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": ""}
+{"model_id": "", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -11890,13 +11890,13 @@ df.head()
 
  
  
-<div id="745f6d77-7656-4c94-9adf-f85c34760a01"></div>
+<div id="3244be51-24e2-44ba-9554-c2a23fced29e"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#745f6d77-7656-4c94-9adf-f85c34760a01');
+var element = $('#3244be51-24e2-44ba-9554-c2a23fced29e');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "cfdaf08da83b405795a999fd9def262a"}
+{"model_id": "cfdaf08da83b405795a999fd9def262a", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -11945,6 +11945,12 @@ var element = $('#745f6d77-7656-4c94-9adf-f85c34760a01');
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python2"><pre><span></span>def ETL(df):
+    &#39;&#39;&#39;
+    Function that performs ETL on a given dataframe
+    Input: df (pyspark Dataframe) - raw / source dataframe with user logs
+    Output: df_features (pyspark Dataframe) - resulting dataframe, aggregated by userid and containing 7 features and churn
+    
+    &#39;&#39;&#39;
     # Clean dataset
     df = df.filter(df.userId != &#39;1261737&#39;)
     
@@ -12053,13 +12059,13 @@ var element = $('#745f6d77-7656-4c94-9adf-f85c34760a01');
 
  
  
-<div id="9d0d4475-df17-4316-a5df-0fe92b8adea1"></div>
+<div id="8e0d525d-7d7d-4a1b-9399-ba6fa17ffa7c"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#9d0d4475-df17-4316-a5df-0fe92b8adea1');
+var element = $('#8e0d525d-7d7d-4a1b-9399-ba6fa17ffa7c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "512df9e59cf2450dac89810aa168cd45"}
+{"model_id": "512df9e59cf2450dac89810aa168cd45", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12095,13 +12101,13 @@ var element = $('#9d0d4475-df17-4316-a5df-0fe92b8adea1');
 
  
  
-<div id="96ddfe24-47a6-4524-8ce5-2104be0e76bc"></div>
+<div id="33a27f1a-248d-4aac-a5e3-9d0591536bb6"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#96ddfe24-47a6-4524-8ce5-2104be0e76bc');
+var element = $('#33a27f1a-248d-4aac-a5e3-9d0591536bb6');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "a4da0bd69a45492db186dc57e76725be"}
+{"model_id": "a4da0bd69a45492db186dc57e76725be", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12138,13 +12144,13 @@ df_features.write.mode(&#39;append&#39;).json(path_wr)
 
  
  
-<div id="d2a051eb-dde5-4c87-8a5d-4fc5ed73f662"></div>
+<div id="3291a409-cba1-4c7a-89c1-ae2b564b363e"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#d2a051eb-dde5-4c87-8a5d-4fc5ed73f662');
+var element = $('#3291a409-cba1-4c7a-89c1-ae2b564b363e');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "35c9cd5e27574627b55b33c3edafcf70"}
+{"model_id": "35c9cd5e27574627b55b33c3edafcf70", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12209,13 +12215,13 @@ df_features = spark.read.json(path_wr)
 
  
  
-<div id="d20ca89a-7e9a-4aed-9af6-677c8356ac10"></div>
+<div id="e7456e27-9c84-46d7-a1d3-f906453ab553"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#d20ca89a-7e9a-4aed-9af6-677c8356ac10');
+var element = $('#e7456e27-9c84-46d7-a1d3-f906453ab553');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "54f75af3081b48638cfce3ce5ad0fa84"}
+{"model_id": "54f75af3081b48638cfce3ce5ad0fa84", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12251,13 +12257,13 @@ var element = $('#d20ca89a-7e9a-4aed-9af6-677c8356ac10');
 
  
  
-<div id="e460c4e8-1840-4735-b8a5-6ee8d497f56d"></div>
+<div id="5546a789-3242-4d4d-99a3-4b608e403d12"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#e460c4e8-1840-4735-b8a5-6ee8d497f56d');
+var element = $('#5546a789-3242-4d4d-99a3-4b608e403d12');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "dd68da764a1d47b28f772e0aa4ca16a8"}
+{"model_id": "dd68da764a1d47b28f772e0aa4ca16a8", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12331,13 +12337,13 @@ from pyspark.ml.tuning import CrossValidator, ParamGridBuilder
 
  
  
-<div id="ec38f095-8b02-477f-80fb-c21a9eeebe54"></div>
+<div id="147968d0-3250-499b-9d31-99b34c76bd09"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#ec38f095-8b02-477f-80fb-c21a9eeebe54');
+var element = $('#147968d0-3250-499b-9d31-99b34c76bd09');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "430a4b268f5642a3944a49052cfe4f38"}
+{"model_id": "430a4b268f5642a3944a49052cfe4f38", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12399,13 +12405,13 @@ X = ScalerModel.transform(X)
 
  
  
-<div id="66848464-10a2-4de9-ad2f-35572bc4ea2c"></div>
+<div id="bafb85ae-e802-4ef6-874d-c299b499ece5"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#66848464-10a2-4de9-ad2f-35572bc4ea2c');
+var element = $('#bafb85ae-e802-4ef6-874d-c299b499ece5');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "62ad0af0e0714727a210415932e5b0f3"}
+{"model_id": "62ad0af0e0714727a210415932e5b0f3", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12476,13 +12482,13 @@ print(&#39;The f1 score achieved using Logistic Regression after Hyperparameter 
 
  
  
-<div id="a59fa97f-af23-4760-98dd-2964055026bc"></div>
+<div id="15382875-0c5a-4bae-9143-cf1b222bc0a7"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#a59fa97f-af23-4760-98dd-2964055026bc');
+var element = $('#15382875-0c5a-4bae-9143-cf1b222bc0a7');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "2178903decfc43408e00bf74d30a05ce"}
+{"model_id": "2178903decfc43408e00bf74d30a05ce", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12555,13 +12561,13 @@ print(&#39;The f1 score achieved using Random Forest Classifier after Hyperparam
 
  
  
-<div id="f5ce12c4-ec28-4070-919f-47ef58e3d611"></div>
+<div id="766252ce-7dbd-4e60-a77d-dcfa0e9a61e1"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#f5ce12c4-ec28-4070-919f-47ef58e3d611');
+var element = $('#766252ce-7dbd-4e60-a77d-dcfa0e9a61e1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "69c90e368a7b475286bbac3b724f831a"}
+{"model_id": "69c90e368a7b475286bbac3b724f831a", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12733,13 +12739,13 @@ model_fin = rf_best.fit(trainingData)
 
  
  
-<div id="dc9220b1-fad5-4c99-b75a-75940feea554"></div>
+<div id="76027a62-5747-4a59-8e0d-050e4427e37e"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#dc9220b1-fad5-4c99-b75a-75940feea554');
+var element = $('#76027a62-5747-4a59-8e0d-050e4427e37e');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": ""}
+{"model_id": "", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12775,13 +12781,13 @@ var element = $('#dc9220b1-fad5-4c99-b75a-75940feea554');
 
  
  
-<div id="1ec102bf-0fca-4a1f-9386-82956676d8b5"></div>
+<div id="f1413230-2761-44ba-8fb1-9d897e2e6845"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#1ec102bf-0fca-4a1f-9386-82956676d8b5');
+var element = $('#f1413230-2761-44ba-8fb1-9d897e2e6845');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": ""}
+{"model_id": "", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12827,13 +12833,13 @@ var element = $('#1ec102bf-0fca-4a1f-9386-82956676d8b5');
 
  
  
-<div id="3deb1c28-62b0-424a-8a88-d75a3bca46f7"></div>
+<div id="7e1cfa52-8d64-43d3-a8db-97c3c6d543da"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#3deb1c28-62b0-424a-8a88-d75a3bca46f7');
+var element = $('#7e1cfa52-8d64-43d3-a8db-97c3c6d543da');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": ""}
+{"model_id": "", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12894,13 +12900,13 @@ model_fin_gbt = gbt_best.fit(trainingData)
 
  
  
-<div id="30ca732f-c914-41bf-a1e6-54c82b7617b8"></div>
+<div id="9cb69cc9-3e3a-428f-851a-b72e2780f230"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#30ca732f-c914-41bf-a1e6-54c82b7617b8');
+var element = $('#9cb69cc9-3e3a-428f-851a-b72e2780f230');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "98a4d5a8386d401e939bc9a2fca3ba3e"}
+{"model_id": "98a4d5a8386d401e939bc9a2fca3ba3e", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12936,13 +12942,13 @@ var element = $('#30ca732f-c914-41bf-a1e6-54c82b7617b8');
 
  
  
-<div id="bc5961b5-ca9c-4b7b-abb9-29eeb9e78c19"></div>
+<div id="04871759-566e-4678-9e75-67779f650997"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#bc5961b5-ca9c-4b7b-abb9-29eeb9e78c19');
+var element = $('#04871759-566e-4678-9e75-67779f650997');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "349f6a1114024b1cac549c7c0b06d6df"}
+{"model_id": "349f6a1114024b1cac549c7c0b06d6df", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12988,13 +12994,13 @@ var element = $('#bc5961b5-ca9c-4b7b-abb9-29eeb9e78c19');
 
  
  
-<div id="e1e25a8f-cd57-4477-8311-e520e4af1856"></div>
+<div id="d4a8c81c-3765-4edc-a039-b02ead377555"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#e1e25a8f-cd57-4477-8311-e520e4af1856');
+var element = $('#d4a8c81c-3765-4edc-a039-b02ead377555');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "a2b0be698c504348b691403f8cfae8fe"}
+{"model_id": "a2b0be698c504348b691403f8cfae8fe", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
