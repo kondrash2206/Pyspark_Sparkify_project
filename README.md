@@ -17,3 +17,6 @@ This project contains two jupyter notebooks: **Sparkify_investigation_prepare.ip
 
 ### Acknowledgments:
 This project is a part of a Udacity "Data Scientist" Nanodegree. Datasets can be obtained from Udacity. 
+
+### Medium article
+https://medium.com/@vitaliykondrashov/first-experience-with-bigdata-predicting-user-churn-of-an-imaginary-music-streaming-app-e29b0b755bf8
