@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Sparkify_modeling</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>2019_05_04_Sparkify</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11810,13 +11810,13 @@ spark = SparkSession \
 
  
  
-<div id="2feaab84-2122-4aa3-95d6-20d75f75700a"></div>
+<div id="d8c0a66c-6591-458c-afa6-0678b2738cc3"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#2feaab84-2122-4aa3-95d6-20d75f75700a');
+var element = $('#d8c0a66c-6591-458c-afa6-0678b2738cc3');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "016efe73e89646f7b902367656d00c7e"}
 </script>
 </div>
 
@@ -11841,7 +11841,7 @@ var element = $('#2feaab84-2122-4aa3-95d6-20d75f75700a');
 
 <div class="output_html rendered_html output_subarea ">
 <table>
-<tr><th>ID</th><th>YARN Application ID</th><th>Kind</th><th>State</th><th>Spark UI</th><th>Driver log</th><th>Current session?</th></tr><tr><td>0</td><td>application_1556980134017_0001</td><td>pyspark</td><td>idle</td><td><a target="_blank" href="http://ip-172-31-31-140.eu-central-1.compute.internal:20888/proxy/application_1556980134017_0001/">Link</a></td><td><a target="_blank" href="http://ip-172-31-25-105.eu-central-1.compute.internal:8042/node/containerlogs/container_1556980134017_0001_01_000001/livy">Link</a></td><td>✔</td></tr></table>
+<tr><th>ID</th><th>YARN Application ID</th><th>Kind</th><th>State</th><th>Spark UI</th><th>Driver log</th><th>Current session?</th></tr><tr><td>0</td><td>application_1557090982442_0001</td><td>pyspark</td><td>idle</td><td><a target="_blank" href="http://ip-172-31-6-32.eu-central-1.compute.internal:20888/proxy/application_1557090982442_0001/">Link</a></td><td><a target="_blank" href="http://ip-172-31-3-129.eu-central-1.compute.internal:8042/node/containerlogs/container_1557090982442_0001_01_000001/livy">Link</a></td><td>✔</td></tr></table>
 </div>
 
 </div>
@@ -11890,13 +11890,13 @@ df.head()
 
  
  
-<div id="3244be51-24e2-44ba-9554-c2a23fced29e"></div>
+<div id="e8b87684-6653-485b-afa2-468daa8ed280"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#3244be51-24e2-44ba-9554-c2a23fced29e');
+var element = $('#e8b87684-6653-485b-afa2-468daa8ed280');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "cfdaf08da83b405795a999fd9def262a", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "cfdaf08da83b405795a999fd9def262a"}
 </script>
 </div>
 
@@ -11946,10 +11946,9 @@ var element = $('#3244be51-24e2-44ba-9554-c2a23fced29e');
     <div class="input_area">
 <div class=" highlight hl-python2"><pre><span></span>def ETL(df):
     &#39;&#39;&#39;
-    Function that performs ETL on a given dataframe
-    Input: df (pyspark Dataframe) - raw / source dataframe with user logs
-    Output: df_features (pyspark Dataframe) - resulting dataframe, aggregated by userid and containing 7 features and churn
-    
+    Function that implement an ETL Pipeline to the raw data
+    Input: df (pyspark dataframe) - raw data with user logs
+    Output: df_features (pyspark dataframe) - user aggregated dataframe
     &#39;&#39;&#39;
     # Clean dataset
     df = df.filter(df.userId != &#39;1261737&#39;)
@@ -12059,13 +12058,13 @@ var element = $('#3244be51-24e2-44ba-9554-c2a23fced29e');
 
  
  
-<div id="8e0d525d-7d7d-4a1b-9399-ba6fa17ffa7c"></div>
+<div id="1e70e62f-d27a-4859-9f2c-01f94b967984"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#8e0d525d-7d7d-4a1b-9399-ba6fa17ffa7c');
+var element = $('#1e70e62f-d27a-4859-9f2c-01f94b967984');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "512df9e59cf2450dac89810aa168cd45", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "512df9e59cf2450dac89810aa168cd45"}
 </script>
 </div>
 
@@ -12101,13 +12100,13 @@ var element = $('#8e0d525d-7d7d-4a1b-9399-ba6fa17ffa7c');
 
  
  
-<div id="33a27f1a-248d-4aac-a5e3-9d0591536bb6"></div>
+<div id="c8c19cfc-5282-4b20-ad18-06ea63e5083c"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#33a27f1a-248d-4aac-a5e3-9d0591536bb6');
+var element = $('#c8c19cfc-5282-4b20-ad18-06ea63e5083c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "a4da0bd69a45492db186dc57e76725be", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "a4da0bd69a45492db186dc57e76725be"}
 </script>
 </div>
 
@@ -12144,13 +12143,13 @@ df_features.write.mode(&#39;append&#39;).json(path_wr)
 
  
  
-<div id="3291a409-cba1-4c7a-89c1-ae2b564b363e"></div>
+<div id="4165e32d-ff85-48e0-b563-a65cfc303f6c"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#3291a409-cba1-4c7a-89c1-ae2b564b363e');
+var element = $('#4165e32d-ff85-48e0-b563-a65cfc303f6c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "35c9cd5e27574627b55b33c3edafcf70", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "35c9cd5e27574627b55b33c3edafcf70"}
 </script>
 </div>
 
@@ -12215,13 +12214,13 @@ df_features = spark.read.json(path_wr)
 
  
  
-<div id="e7456e27-9c84-46d7-a1d3-f906453ab553"></div>
+<div id="7f046126-3adf-49ba-b0df-38bc0658f048"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#e7456e27-9c84-46d7-a1d3-f906453ab553');
+var element = $('#7f046126-3adf-49ba-b0df-38bc0658f048');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "54f75af3081b48638cfce3ce5ad0fa84", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "f40fe0ffc7904899a8afa6e0dc3df5b2"}
 </script>
 </div>
 
@@ -12257,13 +12256,13 @@ var element = $('#e7456e27-9c84-46d7-a1d3-f906453ab553');
 
  
  
-<div id="5546a789-3242-4d4d-99a3-4b608e403d12"></div>
+<div id="3ef4ee05-b01f-408b-897b-9da60ab34e93"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#5546a789-3242-4d4d-99a3-4b608e403d12');
+var element = $('#3ef4ee05-b01f-408b-897b-9da60ab34e93');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "dd68da764a1d47b28f772e0aa4ca16a8", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "3638cd411d8e45688596275ee8535588"}
 </script>
 </div>
 
@@ -12309,7 +12308,7 @@ var element = $('#5546a789-3242-4d4d-99a3-4b608e403d12');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python2"><pre><span></span>from pyspark.ml.feature import StandardScaler
@@ -12317,6 +12316,7 @@ from pyspark.ml.feature import RegexTokenizer, VectorAssembler
 from pyspark.ml.classification import RandomForestClassifier, LogisticRegression, GBTClassifier
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 from pyspark.ml.tuning import CrossValidator, ParamGridBuilder
+import numpy as np
 </pre></div>
 
 </div>
@@ -12337,13 +12337,13 @@ from pyspark.ml.tuning import CrossValidator, ParamGridBuilder
 
  
  
-<div id="147968d0-3250-499b-9d31-99b34c76bd09"></div>
+<div id="add15bc6-b41b-4fc0-80ba-14dada2060c6"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#147968d0-3250-499b-9d31-99b34c76bd09');
+var element = $('#add15bc6-b41b-4fc0-80ba-14dada2060c6');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "430a4b268f5642a3944a49052cfe4f38", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "00d44a451d204465bc3efed9aba7b870"}
 </script>
 </div>
 
@@ -12405,13 +12405,13 @@ X = ScalerModel.transform(X)
 
  
  
-<div id="bafb85ae-e802-4ef6-874d-c299b499ece5"></div>
+<div id="6dbf17e4-d4ed-41a4-8ef2-b0eef831cf98"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#bafb85ae-e802-4ef6-874d-c299b499ece5');
+var element = $('#6dbf17e4-d4ed-41a4-8ef2-b0eef831cf98');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "62ad0af0e0714727a210415932e5b0f3", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "e578fab3e60942d8801396b31cac17e7"}
 </script>
 </div>
 
@@ -12433,28 +12433,57 @@ var element = $('#bafb85ae-e802-4ef6-874d-c299b499ece5');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>In order to find the best classifier 3 classifiers available in spark.ml library were tested: Logistic Regression, Random Forest Classifier and Gradient Boost Classifier.</p>
+<p>Using Parameter Grid the hyperparameters of all above mentioned classifiers were tuned to achieve the best model.</p>
+<p><strong>Logistic Regression</strong>:</p>
+<ul>
+<li>maxIter: maximum number of iterations to run the optimization algorithm. Here I used the values of 5,10 and 20.</li>
+<li>regParam: regularisation term. Here I used the values 0,0.1,1,10. For regularisation parameters the 10 fold difference between neighbor values is a common choice.</li>
+</ul>
+<p><strong>Random Forest</strong></p>
+<ul>
+<li>numTrees: number of trees in the Random Forest classifier. I used values of 1,10 and 20. 1 corresponds to a Decision Tree. I didn't choose the value &gt;20 in order to not slow down the program.</li>
+<li>maxDepth: maximum depth of a single tree in the forest. I used 2,5,10. The values were chosen based on the size of the features: 7. </li>
+</ul>
+<p><strong>GBT Classifier</strong></p>
+<ul>
+<li>maxIter: maximum number of iterations to run the optimization algorithm. Here I used the values of 5 and 15.</li>
+<li>maxDepth: maximum depth of a single tree in the model. I used 2 and 4. The values were chosen based on the size of the features: 7. </li>
+</ul>
+<p>To evaluate the model F1 score was used. F1 represents a balance between precision and recall. Here I can not see whether there is a certain preference for either recall or precision. On the one hand we want to identify as many uncertain customers as possible (recall high) but at the same time we do not want to offer too many discounts (precision low). So the balance between precision and recall is important here.<br>
+F1 score also works if the data is unbalanced, as we have here. Accuracy is therefore not the best choice.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h5 id="Logistic-Regression">Logistic Regression<a class="anchor-link" href="#Logistic-Regression">&#182;</a></h5>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python2"><pre><span></span>lr = LogisticRegression(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;)
+<div class=" highlight hl-python2"><pre><span></span># Initialize a model
+lr = LogisticRegression(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;)
 
+# Define Parameter Grid
 paramGrid_lr = ParamGridBuilder() \
     .addGrid(lr.maxIter,[5, 10, 20]) \
     .addGrid(lr.regParam,[0, 0.1, 1, 10]) \
     .build()
 
-
+# Define CV 
 crossval_lr = CrossValidator(estimator=lr,
                           estimatorParamMaps=paramGrid_lr,
                           evaluator=MulticlassClassificationEvaluator(labelCol=&quot;Churn&quot;, predictionCol=&quot;prediction&quot;, metricName=&quot;f1&quot;),
                           numFolds=3)
-
+# Fit &amp; predict
 model_lr = crossval_lr.fit(trainingData)
 
 pred_lr = model_lr.transform(testData)
@@ -12482,13 +12511,13 @@ print(&#39;The f1 score achieved using Logistic Regression after Hyperparameter 
 
  
  
-<div id="15382875-0c5a-4bae-9143-cf1b222bc0a7"></div>
+<div id="b8934764-dd1b-47aa-b1e9-0a7864d088d8"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#15382875-0c5a-4bae-9143-cf1b222bc0a7');
+var element = $('#b8934764-dd1b-47aa-b1e9-0a7864d088d8');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "2178903decfc43408e00bf74d30a05ce", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "32632960792544fbb09a6cebd95cb902"}
 </script>
 </div>
 
@@ -12512,32 +12541,100 @@ var element = $('#15382875-0c5a-4bae-9143-cf1b222bc0a7');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>What are the best parameters for LR Classifier</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python2"><pre><span></span>best_model_lr = model_lr.bestModel
+
+best_max_iter = best_model_lr._java_obj.getMaxIter()
+best_reg_param = best_model_lr._java_obj.getRegParam()
+print(&#39;Optimal parameters for LR Classifier: maxIter {}, regParam {}&#39;.format(best_max_iter, best_reg_param))
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="505fb5a9-6490-4e4e-938e-2e5f40b62826"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#505fb5a9-6490-4e4e-938e-2e5f40b62826');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "914bec8342ba43e4827bfafbe8c54e2c"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Optimal parameters for LR Classifier: maxIter 10, regParam 0.0</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h5 id="Random-Forest">Random Forest<a class="anchor-link" href="#Random-Forest">&#182;</a></h5>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python2"><pre><span></span>rf = RandomForestClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;)
+<div class=" highlight hl-python2"><pre><span></span># Initialize a model
+rf = RandomForestClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;)
 
+# Define Parameter Grid
 paramGrid_rf = ParamGridBuilder() \
     .addGrid(rf.numTrees,[1, 10, 20]) \
     .addGrid(rf.maxDepth,[2, 5, 10]) \
     .build()
 
-
+# Define CV
 crossval_rf = CrossValidator(estimator=rf,
                           estimatorParamMaps=paramGrid_rf,
                           evaluator=MulticlassClassificationEvaluator(labelCol=&quot;Churn&quot;, predictionCol=&quot;prediction&quot;, metricName=&quot;f1&quot;),
                           numFolds=3)
-
+# Fit &amp; predict
 model_rf = crossval_rf.fit(trainingData)
 
 pred_rf = model_rf.transform(testData)
 
+# Evaluate
 evaluator = MulticlassClassificationEvaluator(labelCol=&quot;Churn&quot;, predictionCol=&quot;prediction&quot;, metricName=&quot;f1&quot;)
 f1 = evaluator.evaluate(pred_rf)
 print(&#39;The f1 score achieved using Random Forest Classifier after Hyperparameter Tuning is {}&#39;.format(round(f1,2)))
@@ -12561,13 +12658,13 @@ print(&#39;The f1 score achieved using Random Forest Classifier after Hyperparam
 
  
  
-<div id="766252ce-7dbd-4e60-a77d-dcfa0e9a61e1"></div>
+<div id="ec30de03-ee2a-4a1d-90fb-c5ef8065cc33"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#766252ce-7dbd-4e60-a77d-dcfa0e9a61e1');
+var element = $('#ec30de03-ee2a-4a1d-90fb-c5ef8065cc33');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "69c90e368a7b475286bbac3b724f831a", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "2502c7141fa94f25b5bc21030bd13b2c"}
 </script>
 </div>
 
@@ -12591,32 +12688,100 @@ var element = $('#766252ce-7dbd-4e60-a77d-dcfa0e9a61e1');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>What are the best tuning Parameters for RF Classifier:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python2"><pre><span></span>best_model_rf = model_rf.bestModel
+
+best_num_trees = best_model_rf._java_obj.getNumTrees()
+best_max_depth = best_model_rf._java_obj.getMaxDepth()
+print(&#39;Optimal parameters for RF Classifier: numTrees {}, maxDepth {}&#39;.format(best_num_trees, best_max_depth))
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="7ebe595e-134a-4d4d-8015-5d2182e622e5"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#7ebe595e-134a-4d4d-8015-5d2182e622e5');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "eab11ea853f344dcbc784e73b51ef7d3"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Optimal parameters for RF Classifier: numTrees 20, maxDepth 10</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h5 id="GBT-Classifier">GBT Classifier<a class="anchor-link" href="#GBT-Classifier">&#182;</a></h5>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python2"><pre><span></span>gbt = GBTClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;)
+<div class=" highlight hl-python2"><pre><span></span># Initialize a model
+gbt = GBTClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;)
 
+# Define Parameter Grid
 paramGrid_gbt = ParamGridBuilder() \
     .addGrid(gbt.maxIter,[5, 15]) \
     .addGrid(gbt.maxDepth,[2, 4]) \
     .build()
 
-
+# Define CV
 crossval_gbt = CrossValidator(estimator=gbt,
                           estimatorParamMaps=paramGrid_gbt,
                           evaluator=MulticlassClassificationEvaluator(labelCol=&quot;Churn&quot;, predictionCol=&quot;prediction&quot;, metricName=&quot;f1&quot;),
                           numFolds=3)
-
+# Fit &amp; predict
 model_gbt = crossval_gbt.fit(trainingData)
 
 pred_gbt = model_gbt.transform(testData)
 
+#Evaluate
 evaluator = MulticlassClassificationEvaluator(labelCol=&quot;Churn&quot;, predictionCol=&quot;prediction&quot;, metricName=&quot;f1&quot;)
 f1 = evaluator.evaluate(pred_gbt)
 print(&#39;The f1 score achieved using GBT Classifier after Hyperparameter Tuning is {}&#39;.format(round(f1,2)))
@@ -12635,9 +12800,21 @@ print(&#39;The f1 score achieved using GBT Classifier after Hyperparameter Tunin
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The f1 score achieved using GBT Classifier after Hyperparameter Tuning is 0.86</pre>
+
+
+
+ 
+ 
+<div id="7332ffb9-bc39-4343-9c6d-a30d3950dab1"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#7332ffb9-bc39-4343-9c6d-a30d3950dab1');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "75d646dd76ab480d84383a108a642aae"}
+</script>
 </div>
+
 </div>
 
 <div class="output_area">
@@ -12646,7 +12823,7 @@ print(&#39;The f1 score achieved using GBT Classifier after Hyperparameter Tunin
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Exception in thread cell_monitor-25:
+<pre>Exception in thread cell_monitor-7:
 Traceback (most recent call last):
   File &#34;/opt/conda/lib/python3.6/threading.py&#34;, line 916, in _bootstrap_inner
     self.run()
@@ -12654,19 +12831,86 @@ Traceback (most recent call last):
     self._target(*self._args, **self._kwargs)
   File &#34;/opt/conda/lib/python3.6/site-packages/awseditorssparkmonitoringwidget-1.0-py3.6.egg/awseditorssparkmonitoringwidget/cellmonitor.py&#34;, line 178, in cell_monitor
     job_binned_stages[job_id][stage_id] = all_stages[stage_id]
-KeyError: 7076
-
-Exception in thread cell_monitor-26:
-Traceback (most recent call last):
-  File &#34;/opt/conda/lib/python3.6/threading.py&#34;, line 916, in _bootstrap_inner
-    self.run()
-  File &#34;/opt/conda/lib/python3.6/threading.py&#34;, line 864, in run
-    self._target(*self._args, **self._kwargs)
-  File &#34;/opt/conda/lib/python3.6/site-packages/awseditorssparkmonitoringwidget-1.0-py3.6.egg/awseditorssparkmonitoringwidget/cellmonitor.py&#34;, line 178, in cell_monitor
-    job_binned_stages[job_id][stage_id] = all_stages[stage_id]
-KeyError: 7599
+KeyError: 1958
 
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The f1 score achieved using GBT Classifier after Hyperparameter Tuning is 0.86</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What are the best parameters for GBT Classifier</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python2"><pre><span></span>best_model_gbt = model_gbt.bestModel
+    
+# get the best parameters for a model
+best_max_iter = best_model_gbt._java_obj.getMaxIter()
+best_max_depth = best_model_gbt._java_obj.getMaxDepth()
+
+print(&#39;Optimal parameters for GBT Classifier: maxIter {}, maxDepth {}&#39;.format(best_max_iter, best_max_depth))
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="04513388-5de7-48af-8403-1845722a1bd4"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#04513388-5de7-48af-8403-1845722a1bd4');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "74b366145503417e97ed6ab91f466794"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Optimal parameters for GBT Classifier: maxIter 15, maxDepth 4</pre>
 </div>
 </div>
 
@@ -12702,6 +12946,400 @@ KeyError: 7599
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Model-Robustness-investigation">Model Robustness investigation<a class="anchor-link" href="#Model-Robustness-investigation">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Random-Forest-Classifier">Random Forest Classifier<a class="anchor-link" href="#Random-Forest-Classifier">&#182;</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this section the robustness of the best RF Model is investigated. To test it the train/test data was shuffeled 10 times and each time the best RF Model was applied to the data. As a result we get 10 f1 scores for train and test data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python2"><pre><span></span># Initialise lists for stat calculation
+f1_list_train = []
+f1_list_test = []
+
+# make 10 simulations
+for i in range(10):
+    
+    # random shuffle of train/test data
+    (trainingData, testData) = X.randomSplit([0.7, 0.3])
+    
+    # recall best RF Model from CV Model implemented above
+    best_model_rf = model_rf.bestModel
+    
+    # get the best parameters for a model
+    best_num_trees = best_model_rf._java_obj.getNumTrees()
+    best_max_depth = best_model_rf._java_obj.getMaxDepth()
+    
+    # Initialize a RF Model with the best parameters set
+    rf_best = RandomForestClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;, numTrees=best_num_trees, maxDepth=best_max_depth)
+    
+    # Train a model
+    model_fin = rf_best.fit(trainingData)
+    
+    # Initialize an evaluator
+    evaluator = MulticlassClassificationEvaluator(labelCol=&quot;Churn&quot;, predictionCol=&quot;prediction&quot;, metricName=&quot;f1&quot;)
+
+    # Calculate f1 for train dataset
+    pred_rf_train = model_fin.transform(trainingData)
+    f1_train = evaluator.evaluate(pred_rf_train)
+    
+    # Calculate f1 for test dataset
+    pred_rf_test = model_fin.transform(testData)
+    f1_test = evaluator.evaluate(pred_rf_test)
+    
+    # Append the f1 scores to corresponding lists
+    f1_list_train.append(f1_train)
+    f1_list_test.append(f1_test)
+    
+    print(&#39;Dataset Split {}: Train f1 score {}, Test f1 score {}&#39;.format(i+1,round(f1_train,5), round(f1_test,5)))
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="92fbf3f1-3e8c-4ed0-8c5e-d131596da791"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#92fbf3f1-3e8c-4ed0-8c5e-d131596da791');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": ""}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dataset Split 1: Train f1 score 0.8991, Test f1 score 0.86112
+Dataset Split 2: Train f1 score 0.89564, Test f1 score 0.8654
+Dataset Split 3: Train f1 score 0.89961, Test f1 score 0.85693
+Dataset Split 4: Train f1 score 0.89709, Test f1 score 0.8611
+Dataset Split 5: Train f1 score 0.90084, Test f1 score 0.85926
+Dataset Split 6: Train f1 score 0.89829, Test f1 score 0.8633
+Dataset Split 7: Train f1 score 0.90139, Test f1 score 0.86606
+Dataset Split 8: Train f1 score 0.89626, Test f1 score 0.86567
+Dataset Split 9: Train f1 score 0.8971, Test f1 score 0.8597
+Dataset Split 10: Train f1 score 0.89775, Test f1 score 0.8659</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Calculate some statistics</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python2"><pre><span></span>train_mean = round(np.mean(f1_list_train),3)
+test_mean = round(np.mean(f1_list_test),3)
+
+train_std = round(np.std(f1_list_train),3)
+test_std = round(np.std(f1_list_test),3)
+
+print(&#39;Results after 10 simulations: Train Mean {}, Train Std {}; Test Mean {}, Test Std {}&#39;.format(train_mean, train_std, 
+                                                                                                    test_mean, test_std))
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="51fc6e84-b50a-4793-8a1d-3d8026238d97"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#51fc6e84-b50a-4793-8a1d-3d8026238d97');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "4cffda92f69e4b6ea12352a9e2fbef79"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Results after 10 simulations: Train Mean 0.898, Train Std 0.002; Test Mean 0.862, Test Std 0.003</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we can see both Train and Test F1 scores remain very stable over 10 folds. Thus the Model is robust. The differnce between Train and Tests scores of 0.036 in my point of view is acceptable. Therefore I can conclude that this model is not overfitted.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="GBT-Classifier">GBT Classifier<a class="anchor-link" href="#GBT-Classifier">&#182;</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this section the robustness of the best GBT Model is investigated. To test it the train/test data was shuffeled 10 times and each time the best GBT Model was applied to the data. As a result we get 10 f1 scores for train and test data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python2"><pre><span></span># Initialise lists for stat calculation
+f1_list_train = []
+f1_list_test = []
+
+# make 10 simulations
+for i in range(10):
+    
+    # random shuffle of train/test data
+    (trainingData, testData) = X.randomSplit([0.7, 0.3])
+    
+    # recall best RF Model from CV Model implemented above
+    best_model_gbt = model_gbt.bestModel
+    
+    # get the best parameters for a model
+    best_max_iter = best_model_gbt._java_obj.getMaxIter()
+    best_max_depth = best_model_gbt._java_obj.getMaxDepth()
+
+    # Initialize a RF Model with the best parameters set
+    gbt_best = GBTClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;, maxIter = best_max_iter, maxDepth=best_max_depth)
+    
+    # Train a model
+    model_fin_gbt = gbt_best.fit(trainingData)
+    
+    # Initialize an evaluator
+    evaluator = MulticlassClassificationEvaluator(labelCol=&quot;Churn&quot;, predictionCol=&quot;prediction&quot;, metricName=&quot;f1&quot;)
+
+    # Calculate f1 for train dataset
+    pred_rf_train = model_fin_gbt.transform(trainingData)
+    f1_train = evaluator.evaluate(pred_rf_train)
+    
+    # Calculate f1 for test dataset
+    pred_rf_test = model_fin_gbt.transform(testData)
+    f1_test = evaluator.evaluate(pred_rf_test)
+    
+    # Append the f1 scores to corresponding lists
+    f1_list_train.append(f1_train)
+    f1_list_test.append(f1_test)
+    
+    print(&#39;Dataset Split {}: Train f1 score {}, Test f1 score {}&#39;.format(i+1,round(f1_train,5), round(f1_test,5)))
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="fd6e8fdd-37cb-4ee9-999d-7ffbe82cfcd3"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#fd6e8fdd-37cb-4ee9-999d-7ffbe82cfcd3');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "fd735c02ef964d1991a216d09c93ab0b"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dataset Split 1: Train f1 score 0.85686, Test f1 score 0.85263
+Dataset Split 2: Train f1 score 0.86212, Test f1 score 0.85002
+Dataset Split 3: Train f1 score 0.85956, Test f1 score 0.8535
+Dataset Split 4: Train f1 score 0.86038, Test f1 score 0.86126
+Dataset Split 5: Train f1 score 0.85902, Test f1 score 0.85804
+Dataset Split 6: Train f1 score 0.85939, Test f1 score 0.85436
+Dataset Split 7: Train f1 score 0.86245, Test f1 score 0.85262
+Dataset Split 8: Train f1 score 0.85329, Test f1 score 0.84343
+Dataset Split 9: Train f1 score 0.86521, Test f1 score 0.852
+Dataset Split 10: Train f1 score 0.85876, Test f1 score 0.84737</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Calculate some statistics</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python2"><pre><span></span>train_mean = round(np.mean(f1_list_train),3)
+test_mean = round(np.mean(f1_list_test),3)
+
+train_std = round(np.std(f1_list_train),3)
+test_std = round(np.std(f1_list_test),3)
+
+print(&#39;Results after 10 simulations: Train Mean {}, Train Std {}; Test Mean {}, Test Std {}&#39;.format(train_mean, train_std, 
+                                                                                                    test_mean, test_std))
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="9d74820f-694f-4e59-8310-7ce4ced8ac12"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#9d74820f-694f-4e59-8310-7ce4ced8ac12');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "72b41d4c797040b79da136c4eb4a9e04"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Results after 10 simulations: Train Mean 0.86, Train Std 0.003; Test Mean 0.853, Test Std 0.005</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we can see both Train and Test F1 scores remain very stable over 10 folds. Thus the Model is robust. The differnce between Train and Tests scores of 0.007 is tiny. Therefore I can conclude that this model is not overfitted.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Get-feature-Importance-from-RF-Classifier">Get feature Importance from RF Classifier<a class="anchor-link" href="#Get-feature-Importance-from-RF-Classifier">&#182;</a></h3>
 </div>
 </div>
@@ -12711,13 +13349,15 @@ KeyError: 7599
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python2"><pre><span></span>best_model_rf = model_rf.bestModel
+<div class=" highlight hl-python2"><pre><span></span># define best model
+best_model_rf = model_rf.bestModel
 
 best_num_trees = best_model_rf._java_obj.getNumTrees()
 best_max_depth = best_model_rf._java_obj.getMaxDepth()
 
 rf_best = RandomForestClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;, numTrees=best_num_trees, maxDepth=best_max_depth)
 
+# fit best model
 model_fin = rf_best.fit(trainingData)
 </pre></div>
 
@@ -12739,13 +13379,13 @@ model_fin = rf_best.fit(trainingData)
 
  
  
-<div id="76027a62-5747-4a59-8e0d-050e4427e37e"></div>
+<div id="e6b266c6-4d95-417a-8151-5072100e8b13"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#76027a62-5747-4a59-8e0d-050e4427e37e');
+var element = $('#e6b266c6-4d95-417a-8151-5072100e8b13');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": ""}
 </script>
 </div>
 
@@ -12781,13 +13421,13 @@ var element = $('#76027a62-5747-4a59-8e0d-050e4427e37e');
 
  
  
-<div id="f1413230-2761-44ba-8fb1-9d897e2e6845"></div>
+<div id="41be4b9c-01fb-4a9c-82dd-b96cb2d4ebcb"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#f1413230-2761-44ba-8fb1-9d897e2e6845');
+var element = $('#41be4b9c-01fb-4a9c-82dd-b96cb2d4ebcb');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": ""}
 </script>
 </div>
 
@@ -12833,13 +13473,13 @@ var element = $('#f1413230-2761-44ba-8fb1-9d897e2e6845');
 
  
  
-<div id="7e1cfa52-8d64-43d3-a8db-97c3c6d543da"></div>
+<div id="e90b0ec6-4448-4a29-9de4-6bef1f164bd0"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#7e1cfa52-8d64-43d3-a8db-97c3c6d543da');
+var element = $('#e90b0ec6-4448-4a29-9de4-6bef1f164bd0');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": ""}
 </script>
 </div>
 
@@ -12872,13 +13512,15 @@ var element = $('#7e1cfa52-8d64-43d3-a8db-97c3c6d543da');
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python2"><pre><span></span>best_model_gbt = model_gbt.bestModel
+<div class=" highlight hl-python2"><pre><span></span># define best model
+best_model_gbt = model_gbt.bestModel
 
 best_max_iter = best_model_gbt._java_obj.getMaxIter()
 best_max_depth = best_model_gbt._java_obj.getMaxDepth()
 
 gbt_best = GBTClassifier(labelCol=&quot;Churn&quot;, featuresCol=&quot;sc_features&quot;, maxIter = best_max_iter, maxDepth=best_max_depth)
 
+# fit best model
 model_fin_gbt = gbt_best.fit(trainingData)
 </pre></div>
 
@@ -12900,13 +13542,13 @@ model_fin_gbt = gbt_best.fit(trainingData)
 
  
  
-<div id="9cb69cc9-3e3a-428f-851a-b72e2780f230"></div>
+<div id="a2da3c67-731b-4541-8a3a-4ad56ef595f4"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#9cb69cc9-3e3a-428f-851a-b72e2780f230');
+var element = $('#a2da3c67-731b-4541-8a3a-4ad56ef595f4');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "98a4d5a8386d401e939bc9a2fca3ba3e", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "98a4d5a8386d401e939bc9a2fca3ba3e"}
 </script>
 </div>
 
@@ -12942,13 +13584,13 @@ var element = $('#9cb69cc9-3e3a-428f-851a-b72e2780f230');
 
  
  
-<div id="04871759-566e-4678-9e75-67779f650997"></div>
+<div id="d5966a4b-1be6-47c7-a3c8-163bebd65547"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#04871759-566e-4678-9e75-67779f650997');
+var element = $('#d5966a4b-1be6-47c7-a3c8-163bebd65547');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "349f6a1114024b1cac549c7c0b06d6df", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "349f6a1114024b1cac549c7c0b06d6df"}
 </script>
 </div>
 
@@ -12994,13 +13636,13 @@ var element = $('#04871759-566e-4678-9e75-67779f650997');
 
  
  
-<div id="d4a8c81c-3765-4edc-a039-b02ead377555"></div>
+<div id="cbd4b142-333e-4856-8f69-54b98642a8a1"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#d4a8c81c-3765-4edc-a039-b02ead377555');
+var element = $('#cbd4b142-333e-4856-8f69-54b98642a8a1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "a2b0be698c504348b691403f8cfae8fe", "version_major": 2, "version_minor": 0}
+{"version_major": 2, "version_minor": 0, "model_id": "a2b0be698c504348b691403f8cfae8fe"}
 </script>
 </div>
 
