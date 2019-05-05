@@ -2,7 +2,9 @@
 Investigation of 12Gb Dataset on AWS EMR using pyspark
 
 ### Project Overview
-Goal of this project is to develop a machine learning model that predicts whether a user of a music streaming app "Sparkify" (not real app) is going to cancel his/her subscription. Based on this knowledge certain benefits could be offered to such users which could prevent a cancelation of a subscription. 
+Imagine you are a data scientist of an imaginary music streaming service Sparkify. Over some time you collected a millions of logs of more than 20000 service users. This contains following information: when user interacted with an app, how it interacted like listened song, visited home page or cancels his/her subscription e.t.c. As a result around 20% of users cancelled their subscription.
+
+Goal of this project is to develop a machine learning model that predicts whether a user of a music streaming app "Sparkify" is going to cancel his/her subscription. Based on this knowledge certain benefits could be offered to such users which could prevent a cancelation of a subscription. 
 
 The work consists of following  steps:
 1. Investigation of a "mini" version of dataset (128 Mb). The goal here is to define a set of features that are likely to be correlated with user churn and based on that define an ETL pipeline for a real "large" dataset.
